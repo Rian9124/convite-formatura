@@ -187,7 +187,20 @@ iframe{
 #celular-insta{
     width: 500px;
     margin-top: 100px;
+    position: relative;
+    overflow: hidden;
+    right: -100%;
+    opacity: 0;
+    transition: all 0.5s ease-out;
 }
+#celular-insta2{
+    position: relative;
+    overflow: hidden;
+    left: -100%;
+    opacity: 0;
+    transition: all 0.5s ease-out;
+}
+
 .divulga-insta{
     display: flex;
     justify-content: center;
@@ -208,4 +221,56 @@ iframe{
 }
 #button-insta{
     margin: 20px;
+    transition: background-color 0.3s ease;
+    animation: pulsar 1s infinite;
+}
+@keyframes pulsar {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+
+
+/* Animação de fade-in */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Animação de slide-in da esquerda */
+@keyframes slideInFromLeft {
+    from {
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Animação de slide-in da direita */
+@keyframes slideInFromRight {
+    from {
+        transform: translateX(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
