@@ -1,0 +1,211 @@
+/* Reset global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Primeira seção */
+.section-animação {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #131112;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    transition: opacity 1.5s ease;
+}
+
+.logo-container {
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+
+.logo {
+    width: 900px;
+    transform: translateY(-100%);
+    animation: logoDown 1.5s forwards 0.5s;
+}
+
+.text {
+    font-size: 2.5rem;
+    color: #ffcb65;
+    margin-top: 20px;
+}
+
+/* Navbar */
+nav {
+    background-color: #6a1b9a;
+    padding: 15px 0;
+    text-align: center;
+    color: #fff;
+}
+
+#titulo-nav h1 {
+    font-size: 1.8rem;
+    margin: 0;
+}
+
+/* Segunda seção */
+.section-conteudo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/Imagem\ do\ WhatsApp\ de\ 2024-11-21\ à\(s\)\ 19.27.47_833461fc.jpg) no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+}
+#text-convit{
+    margin-top: 20px;
+    width: 300px;
+}
+.dp{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.text-section1 h2 {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+}
+
+.text-section1 p {
+    font-size: 1rem;
+    margin: 10px 0;
+}
+
+.buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+button {
+    padding: 10px 25px;
+    background-color: #6a1b9a;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #8e24aa;
+}
+
+.video {
+    margin-top: 30px;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.date h3, .time h3 {
+    color: #ffcb65;
+    font-size: 1.2rem;
+}
+
+.date h1 {
+    color: #fff;
+    font-size: 3rem;
+}
+
+/* Ajusta scroll */
+body, html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+iframe{
+    border: 4px solid #8e24aa;
+    margin-bottom: 30px;
+}
+
+
+
+/* Oculta a seção inicial */
+.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* Animações */
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes logoDown {
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes textIn {
+    to {
+        transform: translateX(0);
+    }
+}
+
+
+/* section insta */
+
+.insta{
+    display: flex;
+}
+#text-insta{
+    width: 300px;
+    text-align: center;
+}
+#celular-insta{
+    width: 500px;
+    margin-top: 100px;
+}
+.divulga-insta{
+    display: flex;
+    justify-content: center;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/Screenshot_2024-11-21-20-26-54-234_com.instagram.android.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+}
+.insta-1{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 100px;
+    color: #f5f5f5;
+}
+#logo-insta{
+    margin-bottom: 20px;
+}
+#button-insta{
+    margin: 20px;
+}
