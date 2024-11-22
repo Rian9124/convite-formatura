@@ -187,20 +187,7 @@ iframe{
 #celular-insta{
     width: 500px;
     margin-top: 100px;
-    position: relative;
-    overflow: hidden;
-    right: -100%;
-    opacity: 0;
-    transition: all 0.5s ease-out;
 }
-#celular-insta2{
-    position: relative;
-    overflow: hidden;
-    left: -100%;
-    opacity: 0;
-    transition: all 0.5s ease-out;
-}
-
 .divulga-insta{
     display: flex;
     justify-content: center;
